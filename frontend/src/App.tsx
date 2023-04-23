@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom"
 import { Home } from "./components/Home/Home"
 import { NotFound } from "./components/404/NotFound"
+import { HiraganaPage } from "./components/HiraganaPage/HiraganaPage"
 
 function App() {
 
@@ -8,7 +9,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/hiragana">
-        <Route index element={<h1>Hiragana</h1>} />
+        <Route index element={<HiraganaPage/>} />
         <Route path="jp-to-pl" element={<h1>jp-pl</h1>} />
         <Route path="pl-to-jp" element={<h1>pl-jp</h1>} />
       </Route>
