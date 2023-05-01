@@ -27,5 +27,4 @@ export async function fetchRandomCard(){
 
 export async function submitAnswer(answer: HiRomaji){
   const response = await axios.post("http://localhost:8081/api/v1/cards", answer);
-  console.log(response.data);
 }

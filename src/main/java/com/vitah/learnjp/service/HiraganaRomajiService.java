@@ -61,8 +61,5 @@ public class HiraganaRomajiService {
         if (hiragana == null) {
             return;
         }
-        if(hiragana.getRomaji().equals(answer.getRomaji())){
-            System.out.println("Correct");
-        }
     }
 }
