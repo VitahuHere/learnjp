@@ -22,7 +22,7 @@ export default function Card() {
   }
 
   function validate(answer: string){
-    if (card.romaji === answer){
+    if (card.romaji === answer.toLowerCase()){
       setquestionBgColor("bg-green-700");
     }
     else {

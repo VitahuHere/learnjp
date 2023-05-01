@@ -15,7 +15,7 @@ export async function fetchCards(){
 }
 
 export async function fetchRandomCard(){
-  const response = await axios.get("http://localhost:8081/api/v1/cards/random");
+  const response = await axios.get("http://192.168.1.40:8081/api/v1/cards/random");
   return {
     id: response.data.id,
     hiragana: response.data.hiragana,
@@ -26,5 +26,5 @@ export async function fetchRandomCard(){
 }
 
 export async function submitAnswer(answer: HiRomaji){
-  const response = await axios.post("http://localhost:8081/api/v1/cards", answer);
+  const response = await axios.post("http://192.168.1.40:8081/api/v1/cards", answer);
 }

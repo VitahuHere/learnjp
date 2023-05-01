@@ -9,7 +9,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/cards")
-@CrossOrigin(origins = {"http://localhost:5173"})
+@CrossOrigin(origins = {"*"})
 public class HiraganaRomajiController {
     private final HiraganaRomajiService hiraganaRomajiService;
 
