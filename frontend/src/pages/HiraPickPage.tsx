@@ -1,11 +1,12 @@
-import { ButtonRow } from "../ButtonRow/ButtonRow"
-import { Footer } from "../Footer/Footer"
+import { Paths } from "../paths"
+import { ButtonRow } from "../components/ButtonRow/ButtonRow"
+import { Footer } from "../components/Footer/Footer"
 
 
-export function HiraganaPage() {
+export default function HiraPickPage() {
   const endpoints = [
-    { path: "jp-to-pl", text: "Hiragana to Romaji", description: "Read Hiragana and write in Romaji" },
-    { path: "jp-to-pl", text: "Romaji to Hiragana", description: "Read Romaji and write in Hiragana" }
+    { path: Paths.hiraRoma, text: "Hiragana to Romaji", description: "Read Hiragana and write in Romaji" },
+    { path: Paths.romaHira, text: "Romaji to Hiragana", description: "Read Romaji and write in Hiragana" }
   ]
 
   return (

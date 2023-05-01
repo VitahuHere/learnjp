@@ -1,12 +1,12 @@
-import { Link } from "react-router-dom"
-import { ButtonRow } from "../ButtonRow/ButtonRow"
-import { Footer } from "../Footer/Footer"
+import { ButtonRow } from "../components/ButtonRow/ButtonRow"
+import { Footer } from "../components/Footer/Footer"
+import { Paths } from "../paths"
 
 
-export function Home() {
+export default function Home() {
   const endpoints = [
-    { path: "/hiragana", text: "Hiragana", description: "Learn Hiragana characters" },
-    { path: "/words", text: "Words", description: "Learn Japanese words" }
+    { path: Paths.hiragana, text: "Hiragana", description: "Learn Hiragana characters" },
+    { path: Paths.words, text: "Words", description: "Learn Japanese words" }
   ]
 
   return (
