@@ -1,6 +1,8 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import { lazy } from "react"
 
+export const root = 'http://192.168.1.40:8081/api/v1'
+
 export const Paths = {
   hiragana: '/hiragana',
   hiraRoma: 'hira-roma',

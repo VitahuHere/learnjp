@@ -40,7 +40,7 @@ public class LangConfig {
             Hiragana hiragana_no = new Hiragana("の", "no");
             Hiragana hiragana_ha = new Hiragana("は", "ha");
             Hiragana hiragana_hi = new Hiragana("ひ", "hi");
-            Hiragana hiragana_hu = new Hiragana("ふ", "hu");
+            Hiragana hiragana_fu = new Hiragana("ふ", "fu");
             Hiragana hiragana_he = new Hiragana("へ", "he");
             Hiragana hiragana_ho = new Hiragana("ほ", "ho");
             Hiragana hiragana_ma = new Hiragana("ま", "ma");
@@ -147,7 +147,7 @@ public class LangConfig {
                             hiragana_no,
                             hiragana_ha,
                             hiragana_hi,
-                            hiragana_hu,
+                            hiragana_fu,
                             hiragana_he,
                             hiragana_ho,
                             hiragana_ma,
@@ -256,7 +256,7 @@ public class LangConfig {
                             new English("no", "sign for no", hiragana_no),
                             new English("ha", "sign for ha", hiragana_ha),
                             new English("hi", "sign for hi", hiragana_hi),
-                            new English("hu", "sign for hu", hiragana_hu),
+                            new English("fu", "sign for fu", hiragana_fu),
                             new English("he", "sign for he", hiragana_he),
                             new English("ho", "sign for ho", hiragana_ho),
                             new English("ma", "sign for ma", hiragana_ma),

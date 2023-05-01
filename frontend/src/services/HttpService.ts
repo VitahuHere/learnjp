@@ -1,9 +1,10 @@
 import axios from 'axios';
+import { root } from '../paths';
 
 
 export async function fetchCards(){
-  const response = await axios.get("http://localhost:8081/api/v1/cards");
-  return response.data.map((card: Card) => {
+  const response = await axios.get(root + "/cards");
+  return response.data.map((card: HiraganaCard) => {
     return {
       id: card.id,
       hiragana: card.hiragana,
@@ -14,8 +15,8 @@ export async function fetchCards(){
   });
 }
 
-export async function fetchRandomCard(){
-  const response = await axios.get("http://192.168.1.40:8081/api/v1/cards/random");
+export async function fetchRandomHiraganaCard(){
+  const response = await axios.get(root + "/cards/random");
   return {
     id: response.data.id,
     hiragana: response.data.hiragana,
@@ -26,5 +27,5 @@ export async function fetchRandomCard(){
 }
 
 export async function submitAnswer(answer: HiRomaji){
-  const response = await axios.post("http://192.168.1.40:8081/api/v1/cards", answer);
+  const response = await axios.post(root + "/cards", answer);
 }

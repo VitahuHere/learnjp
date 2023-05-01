@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react"
-import { fetchRandomCard, submitAnswer } from "../../services/HttpService";
+import { fetchRandomHiraganaCard, submitAnswer } from "../../services/HttpService";
 
 
 
@@ -14,15 +14,15 @@ export default function Card() {
   const answerBox = useRef<HTMLInputElement>(null);
 
   function updateCard() {
-    fetchRandomCard().then(
+    fetchRandomHiraganaCard().then(
       (card) => {
         setCard(card);
       }
     )
   }
 
-  function validate(answer: string){
-    if (card.romaji === answer.toLowerCase()){
+  function validate(answer: string) {
+    if (card.romaji === answer.toLowerCase()) {
       setquestionBgColor("bg-green-700");
     }
     else {
@@ -31,7 +31,7 @@ export default function Card() {
     setTimeout(() => {
       setquestionBgColor("bg-white");
     }, 500);
-    if (answerBox.current != null){
+    if (answerBox.current != null) {
       answerBox.current.value = "";
     }
   }
