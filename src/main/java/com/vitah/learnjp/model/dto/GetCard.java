@@ -1,6 +1,7 @@
 package com.vitah.learnjp.model.dto;
 
 public class GetCard {
+    private Long id;
     private String hiragana;
     private String romaji;
     private String english;
@@ -9,11 +10,20 @@ public class GetCard {
     public GetCard() {
     }
 
-    public GetCard(String hiragana, String romaji, String english, String englishDefinition) {
+    public GetCard(Long id, String hiragana, String romaji, String english, String englishDefinition) {
+        this.id = id;
         this.hiragana = hiragana;
         this.romaji = romaji;
         this.english = english;
         this.englishDefinition = englishDefinition;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getHiragana() {
